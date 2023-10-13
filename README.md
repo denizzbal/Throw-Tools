@@ -1,2 +1,2 @@
 # Unity-Throw-Tools
- knife Hit Benzeri Basit Oyun
+A simple game similar to Knife Hit

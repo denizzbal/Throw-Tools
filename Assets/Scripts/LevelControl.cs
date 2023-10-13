@@ -8,6 +8,10 @@ public class LevelControl : MonoBehaviour
     private int _swordNum = 0;
     public int SwordNum { get =>_swordNum; set => _swordNum = value; }
 
+    [Header("Level Name")]
+    [SerializeField] private string _levelText;
+    public string LevelText { get => _levelText; set => _levelText = value; }
+
     //Bölümde kaç adet kýlýç fýrlatýlacaðý
     [Header("Toplam Kýlýç Sayýsý")]
     [SerializeField] private int _swordCount;
@@ -32,6 +36,20 @@ public class LevelControl : MonoBehaviour
     [Header("Ýconlarýn arasýndaki mesafe")]
     [SerializeField] private float _iconAltAltaSiralamaDegeri;
     public float IconAltAltaSiralamaDegeri { get => _iconAltAltaSiralamaDegeri; set => _iconAltAltaSiralamaDegeri = value; }
+
+    [SerializeField] private GameObject _platform;
+    public GameObject Platform { get => _platform; set => _platform = value; }
+
+    [Header("Platform Dönüþ Hýzý")]
+    [SerializeField] private float _rotationSpeed;
+    public float RotationSpeed { get => _rotationSpeed; set => _rotationSpeed = value; }
+
+    private bool _shotControl;
+    public bool ShotControl { get => _shotControl; set => _shotControl = value; }
+
+    private int _score = 0;
+    public int Score { get => _score; set => _score = value; }
+
 
 
 
